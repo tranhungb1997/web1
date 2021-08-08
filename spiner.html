@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <button type="button" class="btn btn-success" id="buttonProccess"> spiner</button>
+    </div>
+    <script>
+        $('#buttonProccess').click(function(){
+            $(this).addClass('btn btn-primary')
+            $(this).prop("disabled", true)
+            $(this).html("<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'></span> Loading...")
+            $(this).submit
+        })
+    </script>
+</body>
+
+</html>
